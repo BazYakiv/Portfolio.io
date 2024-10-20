@@ -32,5 +32,5 @@ window.onload = (event) => {
     LoaderDiv.classList.add('show');
     setTimeout(()=>{
         LoaderDiv.classList.remove('show');
-    },800)
+    },2000)
 }
