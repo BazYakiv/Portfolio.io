@@ -27,10 +27,9 @@ FullBut.addEventListener('click', (event)=>{
 })
 
 
-
-window.onload = (event) => {
+document.addEventListener("DOMContentLoaded", function() {
     LoaderDiv.classList.add('show');
     setTimeout(()=>{
         LoaderDiv.classList.remove('show');
-    },2000)
-}
+    },600)
+})
