@@ -2,6 +2,8 @@
 const ExitBut = document.getElementById('ExitButton');
 const FullBut = document.getElementById('FullButton');
 
+const LoaderDiv = document.getElementById("Loading");
+
 let IsFull
 
 
@@ -9,6 +11,9 @@ let IsFull
 
 ExitBut.addEventListener('click', (event)=>{
     event.preventDefault();
+
+    window.close();
+
 })
 FullBut.addEventListener('click', (event)=>{
     let elem = document.documentElement;
@@ -18,6 +23,14 @@ FullBut.addEventListener('click', (event)=>{
     }else{
         document.exitFullscreen();
     }
-    
 
 })
+
+
+
+window.onload = (event) => {
+    LoaderDiv.classList.add('show');
+    setTimeout(()=>{
+        LoaderDiv.classList.remove('show');
+    },800)
+}
