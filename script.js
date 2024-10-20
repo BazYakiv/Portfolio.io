@@ -2,9 +2,7 @@
 const ExitBut = document.getElementById('ExitButton');
 const FullBut = document.getElementById('FullButton');
 
-const LoaderDiv = document.getElementById("Loading");
-
-let IsFull
+const LoaderDiv = document.getElementById("Loader");
 
 
 // Button OnClickEvents
